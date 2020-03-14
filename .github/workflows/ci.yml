@@ -6,14 +6,14 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: CultureHQ/actions-bundler
+      - uses: CultureHQ/actions-bundler@v1.0.0
       - name: Linting podspec
         run: bundle exec fastlane podspec_lint
   lint_code:
     runs-on: macos-latest
     steps:
         - uses: actions/checkout@v2
-        - uses: CultureHQ/actions-bundler
+        - uses: CultureHQ/actions-bundler@v1.0.0
         - name: Linting podspec
           run: bundle exec fastlane code_lint
     needs: [lint_podspec]
@@ -22,7 +22,7 @@ jobs:
     runs-on: macos-latest
     steps:
         - uses: actions/checkout@v2
-        - uses: CultureHQ/actions-bundler
+        - uses: CultureHQ/actions-bundler@v1.0.0
         - name: Linting podspec
           run: bundle exec fastlane test_debug
     needs: [lint_podspec]
@@ -31,7 +31,7 @@ jobs:
 #    runs-on: macos-latest
 #    steps:
 #      - uses: actions/checkout@v2
-#      - uses: ./.github/actions/before_run
+#      - uses: CultureHQ/actions-bundler@v1.0.0
 #      - name: Linting podspec
 #        run: bundle exec fastlane test_release
 #    needs: [lint_podspec]
