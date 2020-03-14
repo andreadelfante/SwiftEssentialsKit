@@ -1,6 +1,6 @@
 # SwiftEssentialsKit
 
-[![CI Status](https://img.shields.io/travis/Andrea Del Fante/SwiftEssentialsKit.svg?style=flat)](https://travis-ci.org/Andrea Del Fante/SwiftEssentialsKit)
+![SwiftEssentialsKit CI](https://github.com/andreadelfante/SwiftEssentialsKit/workflows/SwiftEssentialsKit%20CI/badge.svg)
 [![Version](https://img.shields.io/cocoapods/v/SwiftEssentialsKit.svg?style=flat)](https://cocoapods.org/pods/SwiftEssentialsKit)
 [![License](https://img.shields.io/cocoapods/l/SwiftEssentialsKit.svg?style=flat)](https://cocoapods.org/pods/SwiftEssentialsKit)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftEssentialsKit.svg?style=flat)](https://cocoapods.org/pods/SwiftEssentialsKit)
