@@ -19,11 +19,13 @@ PODS:
   - SwiftEssentialsKit/UI-Dev (1.0.0):
     - R.swift
     - SwiftEssentialsKit/UI
+  - SwiftLint (0.39.1)
 
 DEPENDENCIES:
   - Fakery
   - SwiftEssentialsKit (from `../`)
   - SwiftEssentialsKit/UI-Dev (from `../`)
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
@@ -31,6 +33,7 @@ SPEC REPOS:
     - JTAppleCalendar
     - R.swift
     - R.swift.Library
+    - SwiftLint
 
 EXTERNAL SOURCES:
   SwiftEssentialsKit:
@@ -42,7 +45,8 @@ SPEC CHECKSUMS:
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
   SwiftEssentialsKit: a9976a12ecc025003fa8c0353fa8cc151e1a631b
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 2263b36042232a6223a4dac4e1b401c6f09d3ec8
+PODFILE CHECKSUM: 867fd8b2b937f38dc77f3205aafd01451876fe3e
 
 COCOAPODS: 1.9.1

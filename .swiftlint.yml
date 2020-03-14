@@ -6,7 +6,7 @@ included:
 
 excluded:
   - Example/Pods
-  - ./**/*.generated.swift
+  - SwiftEssentialsKit/UI/Generated/R.generated.swift
 
 line_length: 300
 
@@ -14,4 +14,8 @@ file_length:
   warning: 500
   error: 1200
 
-reporter: "xcode"
+identifier_name:
+  min_length: 2
+  allowed_symbols: ["_"]
+
+reporter: "emoji"

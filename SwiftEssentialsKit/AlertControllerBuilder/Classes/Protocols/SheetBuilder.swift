@@ -9,5 +9,5 @@ import Foundation
 
 /// A  protocol to define functions for sheet.
 public protocol SheetBuilder: AlertBuilderProtocol {
-    
+
 }

@@ -12,26 +12,26 @@ public protocol AlertBuilderProtocol {
     typealias ActionBuilder = () -> UIAlertAction
     typealias ActionHandler = (UIAlertAction) -> Void
     typealias ShowCompletion = () -> Void
-    
+
     /// Specify a title for the alert.
     /// - Parameter title: the title.
     /// - Returns: self for chaining.
     func title(_ title: String) -> Self
-    
+
     /// Specify a message for the alert.
     /// - Parameter message: the message.
     /// - Returns: self for chaining.
     func message(_ message: String) -> Self
-    
+
     /// Add an action to the alert.
     /// - Parameter builder: the builder to create an action.
     /// - Returns: self for chaining.
     func addAction(builder: ActionBuilder) -> Self
-    
+
     /// Build an UIAlertController.
     /// - Returns: an UIAlertController.
     func build() -> UIAlertController
-    
+
     /// Show the alert.
     /// - Parameters:
     ///   - context: the controller.
@@ -43,7 +43,7 @@ public protocol AlertBuilderProtocol {
 }
 
 extension AlertBuilderProtocol {
-    
+
     /// Add an action with default style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -56,7 +56,7 @@ extension AlertBuilderProtocol {
                           handler: handler)
         }
     }
-    
+
     /// Add an action with destructive style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -69,7 +69,7 @@ extension AlertBuilderProtocol {
                           handler: handler)
         }
     }
-    
+
     /// Add an action with cancel style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.

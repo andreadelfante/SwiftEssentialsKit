@@ -12,7 +12,7 @@ public protocol PKGInstantiatableStoryboard: PKGInstantiatableController {
 
     /// The source storyboard.
     static var storyboardSource: UIStoryboard { get }
-    
+
     /// The controller identifier specified in `storyboardSource` (Storyboard).
     static var storyboardIdentifier: String { get }
 }
@@ -34,15 +34,15 @@ extension PKGInstantiatableStoryboard {
                 - PKGSplitViewController
                 """)
         }
-        
+
         return controller
     }
-    
+
     public static var shouldWrapInNavigationController: Bool {
         return false
     }
-    
+
     public static func configure(selfController: UIViewController) {
-        
+
     }
 }

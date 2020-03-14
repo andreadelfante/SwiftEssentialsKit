@@ -15,7 +15,7 @@ public protocol HorizontalSelectionViewDataSource: class {
     /// - Parameter horizontalSelectionView: the horizontal view.
     /// - Returns: the number of items.
     func numberOfItems(in horizontalSelectionView: HorizontalSelectionView) -> Int
-    
+
     /// Asks your data source object for the cell that corresponds to the specified item in the horizontal view.
     /// - Parameters:
     ///   - horizontalSelectionView: the horizontal view.

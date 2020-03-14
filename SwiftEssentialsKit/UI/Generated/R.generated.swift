@@ -51,8 +51,7 @@ struct R: Rswift.Validatable {
     // Note: key might not exist in chosen language (in that case, key will be shown)
     for language in languages {
       if let lproj = hostingBundle.url(forResource: language, withExtension: "lproj"),
-         let lbundle = Bundle(url: lproj)
-      {
+         let lbundle = Bundle(url: lproj) {
         let strings = lbundle.url(forResource: tableName, withExtension: "strings")
         let stringsdict = lbundle.url(forResource: tableName, withExtension: "stringsdict")
 
@@ -133,7 +132,7 @@ struct R: Rswift.Validatable {
     }
     #endif
 
-    static func datePickerDayView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> DatePickerDayView? {
+    static func datePickerDayView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> DatePickerDayView? {
       return R.nib.datePickerDayView.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? DatePickerDayView
     }
 
@@ -678,7 +677,7 @@ struct _R: Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "DatePickerDayView"
 
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> DatePickerDayView? {
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey: Any]? = nil) -> DatePickerDayView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? DatePickerDayView
       }
 
@@ -710,7 +709,7 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
-        if _R.storyboard.datePickers().datePickerControllerId() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'datePickerControllerId' could not be loaded from storyboard 'DatePickers' as 'DatePickerController'.") }
+        if _R.storyboard.datePickers().datePickerControllerId() == nil { throw Rswift.ValidationError(description: "[R.swift] ViewController with identifier 'datePickerControllerId' could not be loaded from storyboard 'DatePickers' as 'DatePickerController'.") }
       }
 
       fileprivate init() {}

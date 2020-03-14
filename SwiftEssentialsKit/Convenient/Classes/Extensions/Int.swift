@@ -8,7 +8,7 @@
 import Foundation
 
 extension Int {
-    
+
     /// This integer as string.
     public var asString: String {
         return "\(self)"

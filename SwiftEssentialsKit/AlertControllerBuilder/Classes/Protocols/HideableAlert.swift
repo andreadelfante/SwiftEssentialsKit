@@ -19,7 +19,7 @@ public protocol HideableAlert {
 }
 
 extension HideableAlert {
-    
+
     /// Dismiss this alert.
     /// - Parameters:
     ///   - animated: dismiss with animation.

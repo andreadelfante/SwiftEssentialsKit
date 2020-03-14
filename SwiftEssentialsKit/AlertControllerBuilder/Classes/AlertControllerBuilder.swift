@@ -14,18 +14,18 @@ public class AlertControllerBuilder {
     internal var title: String?
     internal var message: String?
     internal var actions: [UIAlertAction]
-    
+
     internal var textFields: [AlertBuilder.TextFieldBuilder]
     internal var textFieldValues: [String: String]
     internal var validators: [UIAlertAction: AlertBuilder.ValidatorBlock]
-    
+
     internal var barButtonItem: UIBarButtonItem?
     internal var sourceRect: CGRect?
-    
+
     internal init(style: UIAlertController.Style) {
         self.style = style
         self.actions = []
-        
+
         self.textFields = []
         self.textFieldValues = [:]
         self.validators = [:]

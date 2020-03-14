@@ -12,7 +12,7 @@ public protocol AlertBuilder: AlertBuilderProtocol {
     typealias TextFieldBuilder = (UITextField) -> Void
     typealias ActionValuesHandler = (_ action: UIAlertAction, _ values: [String: String]) -> Void
     typealias ValidatorBlock = (_ values: [String: String]) -> Bool
-    
+
     /// Add an action with default style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -20,7 +20,7 @@ public protocol AlertBuilder: AlertBuilderProtocol {
     ///   - handler: the callback when selecting it.
     /// - Returns: self for chaining.
     func addAction(defaultType title: String, validate: @escaping ValidatorBlock, handler: @escaping Self.ActionValuesHandler) -> Self
-    
+
     /// Add an action with cancel style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -28,7 +28,7 @@ public protocol AlertBuilder: AlertBuilderProtocol {
     ///   - handler: the callback when selecting it.
     /// - Returns: self for chaining.
     func addAction(cancelType title: String, validate: @escaping ValidatorBlock, handler: @escaping Self.ActionValuesHandler) -> Self
-    
+
     /// Add an action with destructive style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -36,7 +36,7 @@ public protocol AlertBuilder: AlertBuilderProtocol {
     ///   - handler: the callback when selecting it.
     /// - Returns: self for chaining.
     func addAction(destructiveType title: String, validate: @escaping ValidatorBlock, handler: @escaping Self.ActionValuesHandler) -> Self
-    
+
     /// Add a text field to the alert.
     /// - Parameters:
     ///   - key: the associated key to retrieve the value from this text field.
@@ -55,7 +55,7 @@ extension AlertBuilder {
                          validate: { (_) in return true },
                          handler: handler)
     }
-    
+
     /// Add an action with cancel style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.
@@ -65,7 +65,7 @@ extension AlertBuilder {
                          validate: { (_) in return true },
                          handler: handler)
     }
-    
+
     /// Add an action with destructive style to the alert.
     /// - Parameters:
     ///   - title: the title of the action.

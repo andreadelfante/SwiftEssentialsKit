@@ -14,7 +14,7 @@ public typealias HorizontalSelectionViewCell = UICollectionViewCell & Horizontal
 public protocol HorizontalSelectionViewCellProvider {
     /// The cell identifier to recycle the cell.
     static var identifier: String { get }
-    
+
     /// Its associated nib.
     static var nib: UINib { get }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    
+
     /// Remove from this string whitespaces and new lines.
     public var trimmed: String {
         return trimmingCharacters(
@@ -18,17 +18,17 @@ extension String {
 }
 
 extension String {
-    
+
     /// This string as integer.
     public var asInt: Int? {
         return Int(self)
     }
-    
+
     /// This string as float.
     public var asFloat: Float? {
         return Float(self)
     }
-    
+
     /// This string as double.
     public var asDouble: Double? {
         return Double(self)

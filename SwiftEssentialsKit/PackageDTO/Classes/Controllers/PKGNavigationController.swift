@@ -16,15 +16,15 @@ open class PKGNavigationController: UINavigationController, PKGControllerProtoco
             controller?.package = newValue
         }
     }
-    
+
     deinit {
         package = nil
     }
-    
+
     open func properties(from package: Package) {
         rootPKGController?.properties(from: package)
     }
-    
+
     private var rootPKGController: PKGControllerProtocol? {
         return viewControllers.first as? PKGControllerProtocol
     }

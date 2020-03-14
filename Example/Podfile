@@ -7,6 +7,7 @@ target 'SwiftEssentialsKit_Example' do
   pod 'SwiftEssentialsKit/UI-Dev', :path => '../'
 
   pod 'Fakery'
+  pod 'SwiftLint'
 
   target 'SwiftEssentialsKit_Tests' do
     inherit! :search_paths

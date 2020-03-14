@@ -62,7 +62,7 @@ public enum DateFormatPattern: String, CaseIterable {
 }
 
 extension Date {
-    
+
     /// Create a new string using this date.
     ///
     /// - Parameter pattern: the date pattern
@@ -73,7 +73,7 @@ extension Date {
 }
 
 extension String {
-    
+
     /// Create a new date using this string.
     ///
     /// - Parameter pattern: the date pattern
@@ -84,7 +84,7 @@ extension String {
 }
 
 extension DateFormatter {
-    
+
     fileprivate convenience init(
         pattern: DateFormatPattern,
         timeZone: TimeZone = TimeZone.current,
@@ -94,14 +94,14 @@ extension DateFormatter {
                   timeZone: timeZone,
                   calendar: calendar)
     }
-    
+
     fileprivate convenience init(
         dateFormat: String,
         timeZone: TimeZone = TimeZone.current,
         calendar: Calendar = Calendar.current
     ) {
         self.init()
-        
+
         self.dateFormat = dateFormat
         self.timeZone = timeZone
         self.calendar = calendar
