@@ -10,30 +10,36 @@ jobs:
         run: gem update --system
       - name: Gem install bundler
         run: gem install bundler --user-install --no-document --quiet
+      - name: Install Gem dependencies
+        run: bundle install
       - name: Linting podspec
         run: bundle exec fastlane podspec_lint
   lint_code:
     runs-on: macos-latest
     steps:
-        - uses: actions/checkout@v2
-        - name: Gem update system
-          run: gem update --system
-        - name: Gem install bundler
-          run: gem install bundler --user-install --no-document --quiet
-        - name: Linting swift code
-          run: bundle exec fastlane code_lint
+      - uses: actions/checkout@v2
+      - name: Gem update system
+        run: gem update --system
+      - name: Gem install bundler
+        run: gem install bundler --user-install --no-document --quiet
+      - name: Install Gem dependencies
+        run: bundle install
+      - name: Linting swift code
+        run: bundle exec fastlane code_lint
     needs: [lint_podspec]
 
   test_debug:
     runs-on: macos-latest
     steps:
-        - uses: actions/checkout@v2
-        - name: Gem update system
-          run: gem update --system
-        - name: Gem install bundler
-          run: gem install bundler --user-install --no-document --quiet
-        - name: Run tests in debug mode
-          run: bundle exec fastlane test_debug
+      - uses: actions/checkout@v2
+      - name: Gem update system
+        run: gem update --system
+      - name: Gem install bundler
+        run: gem install bundler --user-install --no-document --quiet
+      - name: Install Gem dependencies
+        run: bundle install
+      - name: Run tests in debug mode
+        run: bundle exec fastlane test_debug
     needs: [lint_podspec]
 
 #  test_release:
@@ -44,6 +50,8 @@ jobs:
 #        run: gem update --system
 #      - name: Gem install bundler
 #        run: gem install bundler --user-install --no-document --quiet
+#      - name: Install Gem dependencies
+#        run: bundle install
 #      - name: Run tests in release mode
 #        run: bundle exec fastlane test_release
 #    needs: [lint_podspec]
