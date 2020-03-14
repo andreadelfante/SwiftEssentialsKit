@@ -1,0 +1,48 @@
+PODS:
+  - Fakery (4.1.1)
+  - JTAppleCalendar (8.0.3)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - SwiftEssentialsKit (1.0.0):
+    - SwiftEssentialsKit/Basic (= 1.0.0)
+  - SwiftEssentialsKit/AlertControllerBuilder (1.0.0)
+  - SwiftEssentialsKit/Basic (1.0.0):
+    - SwiftEssentialsKit/AlertControllerBuilder
+    - SwiftEssentialsKit/Convenient
+    - SwiftEssentialsKit/PackageDTO
+  - SwiftEssentialsKit/Convenient (1.0.0)
+  - SwiftEssentialsKit/PackageDTO (1.0.0)
+  - SwiftEssentialsKit/UI (1.0.0):
+    - JTAppleCalendar (~> 8.0.0)
+    - SwiftEssentialsKit/PackageDTO
+  - SwiftEssentialsKit/UI-Dev (1.0.0):
+    - R.swift
+    - SwiftEssentialsKit/UI
+
+DEPENDENCIES:
+  - Fakery
+  - SwiftEssentialsKit (from `../`)
+  - SwiftEssentialsKit/UI-Dev (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Fakery
+    - JTAppleCalendar
+    - R.swift
+    - R.swift.Library
+
+EXTERNAL SOURCES:
+  SwiftEssentialsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Fakery: d3380c4aa1efe7631c0831d7e26aa9db4491f014
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  SwiftEssentialsKit: a9976a12ecc025003fa8c0353fa8cc151e1a631b
+
+PODFILE CHECKSUM: 2263b36042232a6223a4dac4e1b401c6f09d3ec8
+
+COCOAPODS: 1.9.1

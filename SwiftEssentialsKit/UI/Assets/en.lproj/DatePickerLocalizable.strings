@@ -1,0 +1,18 @@
+/* 
+  DatePicker.strings
+  Pods
+
+  Created by Andrea Del Fante on 25/02/2020.
+  
+*/
+
+"title select date" = "Pick a day";
+"lbl today" = "Today";
+
+"lbl mon" = "M";
+"lbl tue" = "T";
+"lbl wed" = "W";
+"lbl thu" = "T";
+"lbl fri" = "F";
+"lbl sat" = "S";
+"lbl sun" = "S";

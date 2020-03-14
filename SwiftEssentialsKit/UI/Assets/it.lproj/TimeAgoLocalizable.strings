@@ -1,0 +1,23 @@
+/* 
+  TimeAgoLocalizable.strings
+  Pods
+
+  Created by Andrea Del Fante on 22/02/2020.
+  
+*/
+
+"just now" = "Adesso";
+"n seconds ago" = "%d secondi fa";
+"a minute ago" = "Un minuto fa";
+"n minutes ago" = "%d minuti fa";
+"an hour ago" = "Un'ora fa";
+"n hours ago" = "%d ore fa";
+"yesterday" = "Ieri";
+"n days ago" = "%d giorni fa";
+"last week" = "La settimana scorsa";
+"n weeks ago" = "%d settimane fa";
+"last month" = "Il mese scorso";
+"n months ago" = "%d mesi fa";
+"last year" = "L'anno scorso";
+"n years ago" = "%d anni fa";
+"never" = "Mai";

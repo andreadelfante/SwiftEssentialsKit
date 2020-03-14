@@ -18,6 +18,12 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleDisplayName</key>
+	<string>SwiftEssentialsKit-Tests</string>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>

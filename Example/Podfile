@@ -1,11 +1,23 @@
 use_frameworks!
 
+platform :ios, '10.0'
+
 target 'SwiftEssentialsKit_Example' do
   pod 'SwiftEssentialsKit', :path => '../'
+  pod 'SwiftEssentialsKit/UI-Dev', :path => '../'
+
+  pod 'Fakery'
 
   target 'SwiftEssentialsKit_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        next unless config.name == 'Debug'
+        config.build_settings['LD_RUNPATH_SEARCH_PATHS'] = [
+          '$(FRAMEWORK_SEARCH_PATHS)'
+        ]
+    end
 end

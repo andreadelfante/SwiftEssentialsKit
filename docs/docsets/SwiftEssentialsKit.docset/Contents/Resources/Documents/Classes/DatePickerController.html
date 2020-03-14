@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DatePickerController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/DatePickerController" class="dashAnchor"></a>
+
+    <a title="DatePickerController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SwiftEssentialsKit Docs
+        </a>
+         (78% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/andreadelfante/SwiftEssentialsKit">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fandreadelfante%2Egithub%2Eio%2Fdocsets%2FSwiftEssentialsKit%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SwiftEssentialsKit Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      DatePickerController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AlertControllerBuilder.html">AlertControllerBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AvatarView.html">AvatarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CapsuleLabelView.html">CapsuleLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CapsuleView.html">CapsuleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CloseBarButtonItem.html">CloseBarButtonItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DatePickerController.html">DatePickerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/HorizontalSelectionView.html">HorizontalSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGCollectionViewController.html">PKGCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGNavigationController.html">PKGNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGPageViewController.html">PKGPageViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGSplitViewController.html">PKGSplitViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGTabBarController.html">PKGTabBarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGTableViewController.html">PKGTableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGViewController.html">PKGViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Package.html">Package</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RectangleView.html">RectangleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RelativeTimeLabel.html">RelativeTimeLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DateFormatPattern.html">DateFormatPattern</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIAlertController.html">UIAlertController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AlertBuilder.html">AlertBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AlertBuilderProtocol.html">AlertBuilderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DatePickerControllerDelegate.html">DatePickerControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HideableAlert.html">HideableAlert</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewCellProvider.html">HorizontalSelectionViewCellProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewDataSource.html">HorizontalSelectionViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewDelegate.html">HorizontalSelectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGControllerProtocol.html">PKGControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGInstantiatableController.html">PKGInstantiatableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGInstantiatableStoryboard.html">PKGInstantiatableStoryboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/s:18SwiftEssentialsKit12SheetBuilderP">SheetBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Info.html">Info</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:18SwiftEssentialsKit27HorizontalSelectionViewCella">HorizontalSelectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>DatePickerController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DatePickerController</span> <span class="p">:</span> <span class="kt"><a href="../Classes/PKGViewController.html">PKGViewController</a></span><span class="p">,</span> <span class="kt">JTACMonthViewDelegate</span><span class="p">,</span> <span class="kt">JTACMonthViewDataSource</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DatePickerController</span><span class="p">:</span> <span class="kt"><a href="../Protocols/PKGInstantiatableStoryboard.html">PKGInstantiatableStoryboard</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A calendar date picker.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit20DatePickerControllerC10properties4fromyAA7PackageC_tF"></a>
+                    <a name="//apple_ref/swift/Method/properties(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit20DatePickerControllerC10properties4fromyAA7PackageC_tF">properties(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">properties</span><span class="p">(</span><span class="n">from</span> <span class="nv">package</span><span class="p">:</span> <span class="kt"><a href="../Classes/Package.html">Package</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SwiftEssentialsKit@objc(cs)DatePickerController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SwiftEssentialsKit@objc(cs)DatePickerController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/JTAppleCalendar"></a>
+                <a name="//apple_ref/swift/Section/JTAppleCalendar" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/JTAppleCalendar"></a>
+                  <h3 class="section-name"><p>JTAppleCalendar</p>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar23JTACMonthViewDataSourceP09configureB0yAA23ConfigurationParametersVAA0cD0CF"></a>
+                    <a name="//apple_ref/swift/Method/configureCalendar(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar23JTACMonthViewDataSourceP09configureB0yAA23ConfigurationParametersVAA0cD0CF">configureCalendar(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">configureCalendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConfigurationParameters</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_13cellForItemAt0G5State9indexPathAA11JTACDayCellCAA0cD0C_10Foundation4DateVAA0oK0VAL05IndexM0VtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:cellForItemAt:cellState:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_13cellForItemAt0G5State9indexPathAA11JTACDayCellCAA0cD0C_10Foundation4DateVAA0oK0VAL05IndexM0VtF">calendar(_:cellForItemAt:cellState:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">cellState</span><span class="p">:</span> <span class="kt">CellState</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">JTACDayCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_11willDisplay9forItemAt9cellState9indexPathyAA0cD0C_AA11JTACDayCellC10Foundation4DateVAA0qM0VAM05IndexO0VtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:willDisplay:forItemAt:cellState:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_11willDisplay9forItemAt9cellState9indexPathyAA0cD0C_AA11JTACDayCellC10Foundation4DateVAA0qM0VAM05IndexO0VtF">calendar(_:willDisplay:forItemAt:cellState:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">willDisplay</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">JTACDayCell</span><span class="p">,</span> <span class="n">forItemAt</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">cellState</span><span class="p">:</span> <span class="kt">CellState</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_16shouldSelectDate4cell0J5State9indexPathSbAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:shouldSelectDate:cell:cellState:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_16shouldSelectDate4cell0J5State9indexPathSbAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF">calendar(_:shouldSelectDate:cell:cellState:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">shouldSelectDate</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">JTACDayCell</span><span class="p">?,</span> <span class="nv">cellState</span><span class="p">:</span> <span class="kt">CellState</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_06headerD12ForDateRange2atAA0c8ReusableD0CAA0cD0C_10Foundation0I0V5start_AM3endtAK9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:headerViewForDateRange:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_06headerD12ForDateRange2atAA0c8ReusableD0CAA0cD0C_10Foundation0I0V5start_AM3endtAK9IndexPathVtF">calendar(_:headerViewForDateRange:at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">headerViewForDateRange</span> <span class="nv">range</span><span class="p">:</span> <span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Date</span><span class="p">),</span> <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">JTACMonthReusableView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP21calendarSizeForMonthsyAA05MonthG0VSgAA0cD0CSgF"></a>
+                    <a name="//apple_ref/swift/Method/calendarSizeForMonths(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP21calendarSizeForMonthsyAA05MonthG0VSgAA0cD0CSgF">calendarSizeForMonths(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendarSizeForMonths</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">MonthSize</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_13didSelectDate4cell0J5State9indexPathyAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:didSelectDate:cell:cellState:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_13didSelectDate4cell0J5State9indexPathyAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF">calendar(_:didSelectDate:cell:cellState:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">didSelectDate</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">JTACDayCell</span><span class="p">?,</span> <span class="nv">cellState</span><span class="p">:</span> <span class="kt">CellState</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_15didDeselectDate4cell0J5State9indexPathyAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF"></a>
+                    <a name="//apple_ref/swift/Method/calendar(_:didDeselectDate:cell:cellState:indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15JTAppleCalendar21JTACMonthViewDelegateP8calendar_15didDeselectDate4cell0J5State9indexPathyAA0cD0C_10Foundation0I0VAA11JTACDayCellCSgAA0pK0VAK05IndexM0VtF">calendar(_:didDeselectDate:cell:cellState:indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">calendar</span><span class="p">(</span><span class="n">_</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">JTACMonthView</span><span class="p">,</span> <span class="n">didDeselectDate</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">JTACDayCell</span><span class="p">?,</span> <span class="nv">cellState</span><span class="p">:</span> <span class="kt">CellState</span><span class="p">,</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit27PKGInstantiatableStoryboardP16storyboardSourceSo12UIStoryboardCvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/storyboardSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit27PKGInstantiatableStoryboardP16storyboardSourceSo12UIStoryboardCvpZ">storyboardSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">storyboardSource</span><span class="p">:</span> <span class="kt">UIStoryboard</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit27PKGInstantiatableStoryboardP20storyboardIdentifierSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/storyboardIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit27PKGInstantiatableStoryboardP20storyboardIdentifierSSvpZ">storyboardIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">storyboardIdentifier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit20DatePickerControllerC11instantiate8calendar7current5start3end8delegateSo06UIViewF0C10Foundation8CalendarV_AL0D0VA2pA0deF8Delegate_pSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/instantiate(calendar:current:start:end:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit20DatePickerControllerC11instantiate8calendar7current5start3end8delegateSo06UIViewF0C10Foundation8CalendarV_AL0D0VA2pA0deF8Delegate_pSgtFZ">instantiate(calendar:current:start:end:delegate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a new calendar date picker.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">instantiate</span><span class="p">(</span>
+    <span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+    <span class="nv">current</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span>
+    <span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span>
+    <span class="nv">end</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span>
+    <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DatePickerControllerDelegate.html">DatePickerControllerDelegate</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the calendar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>current</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the current date.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>start</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the start date.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>end</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the end date.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new DatePickerController.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit27PKGInstantiatableControllerP022shouldWrapInNavigationE0SbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shouldWrapInNavigationController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit27PKGInstantiatableControllerP022shouldWrapInNavigationE0SbvpZ">shouldWrapInNavigationController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shouldWrapInNavigationController</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit27PKGInstantiatableControllerP9configure04selfE0ySo06UIViewE0C_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/configure(selfController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit27PKGInstantiatableControllerP9configure04selfE0ySo06UIViewE0C_tFZ">configure(selfController:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">selfController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://twitter.com/a_delfante" target="_blank" rel="external">andreadelfante</a>. All rights reserved. (Last updated: 2020-03-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

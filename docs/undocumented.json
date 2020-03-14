@@ -1,0 +1,432 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilder.swift",
+      "line": 12,
+      "symbol": "AlertBuilder.TextFieldBuilder",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilder.swift",
+      "line": 13,
+      "symbol": "AlertBuilder.ActionValuesHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilder.swift",
+      "line": 14,
+      "symbol": "AlertBuilder.ValidatorBlock",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilderProtocol.swift",
+      "line": 12,
+      "symbol": "AlertBuilderProtocol.ActionBuilder",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilderProtocol.swift",
+      "line": 13,
+      "symbol": "AlertBuilderProtocol.ActionHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/AlertBuilderProtocol.swift",
+      "line": 14,
+      "symbol": "AlertBuilderProtocol.ShowCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/AlertControllerBuilder/Classes/Protocols/HideableAlert.swift",
+      "line": 12,
+      "symbol": "HideableAlert.HideCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/Convenient/Classes/Extensions/String.swift",
+      "line": 42,
+      "symbol": "String.trim",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/Convenient/Classes/Misc/Info.swift",
+      "line": 17,
+      "symbol": "Info.bundle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Controllers/PKGCollectionViewController.swift",
+      "line": 22,
+      "symbol": "PKGCollectionViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Controllers/PKGPageViewController.swift",
+      "line": 22,
+      "symbol": "PKGPageViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Controllers/PKGTableViewController.swift",
+      "line": 22,
+      "symbol": "PKGTableViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Controllers/PKGViewController.swift",
+      "line": 22,
+      "symbol": "PKGViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Package.swift",
+      "line": 23,
+      "symbol": "Package.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Package.swift",
+      "line": 28,
+      "symbol": "Package.subscript(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/PackageDTO/Classes/Package.swift",
+      "line": 64,
+      "symbol": "Package.copy(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Controllers/DatePickerController.swift",
+      "line": 69,
+      "symbol": "DatePickerController.properties(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Controllers/DatePickerController.swift",
+      "line": 79,
+      "symbol": "DatePickerController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 12,
+      "symbol": "AvatarView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 16,
+      "symbol": "AvatarView.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 37,
+      "symbol": "AvatarView.initials",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 44,
+      "symbol": "AvatarView.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 59,
+      "symbol": "AvatarView.fontSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 71,
+      "symbol": "AvatarView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 76,
+      "symbol": "AvatarView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 102,
+      "symbol": "AvatarView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
+      "line": 112,
+      "symbol": "AvatarView.willMove(toWindow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleLabelView.swift",
+      "line": 12,
+      "symbol": "CapsuleLabelView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleLabelView.swift",
+      "line": 16,
+      "symbol": "CapsuleLabelView.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleLabelView.swift",
+      "line": 23,
+      "symbol": "CapsuleLabelView.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleLabelView.swift",
+      "line": 32,
+      "symbol": "CapsuleLabelView.fontSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleLabelView.swift",
+      "line": 54,
+      "symbol": "CapsuleLabelView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 12,
+      "symbol": "CapsuleView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 16,
+      "symbol": "CapsuleView.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 29,
+      "symbol": "CapsuleView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 34,
+      "symbol": "CapsuleView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 46,
+      "symbol": "CapsuleView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
+      "line": 53,
+      "symbol": "CapsuleView.willMove(toWindow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CloseBarButtonItem.swift",
+      "line": 13,
+      "symbol": "CloseBarButtonItem.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CloseBarButtonItem.swift",
+      "line": 18,
+      "symbol": "CloseBarButtonItem.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CloseBarButtonItem.swift",
+      "line": 23,
+      "symbol": "CloseBarButtonItem.init(target:action:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 21,
+      "symbol": "HorizontalSelectionView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 26,
+      "symbol": "HorizontalSelectionView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 52,
+      "symbol": "HorizontalSelectionView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 57,
+      "symbol": "HorizontalSelectionView.reloadData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 112,
+      "symbol": "HorizontalSelectionView.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 116,
+      "symbol": "HorizontalSelectionView.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 120,
+      "symbol": "HorizontalSelectionView.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 131,
+      "symbol": "HorizontalSelectionView.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 136,
+      "symbol": "HorizontalSelectionView.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionView.swift",
+      "line": 140,
+      "symbol": "HorizontalSelectionView.collectionView(_:layout:minimumInteritemSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/HorizontalSelectionView/HorizontalSelectionViewDelegate.swift",
+      "line": 13,
+      "symbol": "HorizontalSelectionViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 12,
+      "symbol": "RectangleView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 16,
+      "symbol": "RectangleView.color",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 29,
+      "symbol": "RectangleView.cornerRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 38,
+      "symbol": "RectangleView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 43,
+      "symbol": "RectangleView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 55,
+      "symbol": "RectangleView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 61,
+      "symbol": "RectangleView.willMove(toWindow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RelativeTimeLabel.swift",
+      "line": 28,
+      "symbol": "RelativeTimeLabel.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Desktop/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RelativeTimeLabel.swift",
+      "line": 33,
+      "symbol": "RelativeTimeLabel.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/andrea/Desktop/SwiftEssentialsKit"
+}

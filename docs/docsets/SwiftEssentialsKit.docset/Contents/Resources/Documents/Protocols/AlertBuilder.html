@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AlertBuilder Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/AlertBuilder" class="dashAnchor"></a>
+
+    <a title="AlertBuilder Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SwiftEssentialsKit Docs
+        </a>
+         (78% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/andreadelfante/SwiftEssentialsKit">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Fandreadelfante%2Egithub%2Eio%2Fdocsets%2FSwiftEssentialsKit%2Exml">
+            <img class="header-icon" src="../img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SwiftEssentialsKit Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AlertBuilder Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AlertControllerBuilder.html">AlertControllerBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AvatarView.html">AvatarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CapsuleLabelView.html">CapsuleLabelView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CapsuleView.html">CapsuleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CloseBarButtonItem.html">CloseBarButtonItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DatePickerController.html">DatePickerController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/HorizontalSelectionView.html">HorizontalSelectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGCollectionViewController.html">PKGCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGNavigationController.html">PKGNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGPageViewController.html">PKGPageViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGSplitViewController.html">PKGSplitViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGTabBarController.html">PKGTabBarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGTableViewController.html">PKGTableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PKGViewController.html">PKGViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Package.html">Package</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RectangleView.html">RectangleView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/RelativeTimeLabel.html">RelativeTimeLabel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/DateFormatPattern.html">DateFormatPattern</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIAlertController.html">UIAlertController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AlertBuilder.html">AlertBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AlertBuilderProtocol.html">AlertBuilderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/DatePickerControllerDelegate.html">DatePickerControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HideableAlert.html">HideableAlert</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewCellProvider.html">HorizontalSelectionViewCellProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewDataSource.html">HorizontalSelectionViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HorizontalSelectionViewDelegate.html">HorizontalSelectionViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGControllerProtocol.html">PKGControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGInstantiatableController.html">PKGInstantiatableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PKGInstantiatableStoryboard.html">PKGInstantiatableStoryboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols.html#/s:18SwiftEssentialsKit12SheetBuilderP">SheetBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Info.html">Info</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:18SwiftEssentialsKit27HorizontalSelectionViewCella">HorizontalSelectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>AlertBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AlertBuilder</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AlertBuilderProtocol.html">AlertBuilderProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A  protocol to define functions for sheet.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP09TextFieldE0a"></a>
+                    <a name="//apple_ref/swift/Alias/TextFieldBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP09TextFieldE0a">TextFieldBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">TextFieldBuilder</span> <span class="o">=</span> <span class="p">(</span><span class="kt">UITextField</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera"></a>
+                    <a name="//apple_ref/swift/Alias/ActionValuesHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">ActionValuesHandler</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">UIAlertAction</span><span class="p">,</span> <span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP14ValidatorBlocka"></a>
+                    <a name="//apple_ref/swift/Alias/ValidatorBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP14ValidatorBlocka">ValidatorBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">ValidatorBlock</span> <span class="o">=</span> <span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP9addAction11defaultType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(defaultType:validate:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP9addAction11defaultType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF">addAction(defaultType:validate:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with default style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">defaultType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">validate</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP14ValidatorBlocka">ValidatorBlock</a></span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>validate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>this closure return true if this action is enabled, false otherwise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self for chaining.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP9addAction10cancelType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(cancelType:validate:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP9addAction10cancelType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF">addAction(cancelType:validate:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with cancel style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">cancelType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">validate</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP14ValidatorBlocka">ValidatorBlock</a></span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>validate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>this closure return true if this action is enabled, false otherwise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self for chaining.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP9addAction15destructiveType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(destructiveType:validate:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP9addAction15destructiveType8validate7handlerxSS_SbSDyS2SGcySo07UIAlertG0C_AHtctF">addAction(destructiveType:validate:handler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with destructive style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">destructiveType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">validate</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP14ValidatorBlocka">ValidatorBlock</a></span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>validate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>this closure return true if this action is enabled, false otherwise.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self for chaining.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderP3add9textField13configurationxSS_ySo06UITextH0CctF"></a>
+                    <a name="//apple_ref/swift/Method/add(textField:configuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderP3add9textField13configurationxSS_ySo06UITextH0CctF">add(textField:configuration:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a text field to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">textField</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP09TextFieldE0a">TextFieldBuilder</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the associated key to retrieve the value from this text field.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the text field configuration.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self for chaining.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction11defaultType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(defaultType:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction11defaultType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF">addAction(defaultType:handler:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with default style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">defaultType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction10cancelType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(cancelType:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction10cancelType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF">addAction(cancelType:handler:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with cancel style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">cancelType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction15destructiveType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF"></a>
+                    <a name="//apple_ref/swift/Method/addAction(destructiveType:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderPAAE9addAction15destructiveType7handlerxSS_ySo07UIAlertG0C_SDyS2SGtctF">addAction(destructiveType:handler:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add an action with destructive style to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addAction</span><span class="p">(</span><span class="n">destructiveType</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="k">Self</span><span class="o">.</span><span class="kt"><a href="../Protocols/AlertBuilder.html#/s:18SwiftEssentialsKit12AlertBuilderP19ActionValuesHandlera">ActionValuesHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the title of the action.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the callback when selecting it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SwiftEssentialsKit12AlertBuilderPAAE3add9textFieldxSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/add(textField:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SwiftEssentialsKit12AlertBuilderPAAE3add9textFieldxSS_tF">add(textField:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a text field to the alert.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">textField</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the associated key to retrieve the value from this text field.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self for chaining.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://twitter.com/a_delfante" target="_blank" rel="external">andreadelfante</a>. All rights reserved. (Last updated: 2020-03-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

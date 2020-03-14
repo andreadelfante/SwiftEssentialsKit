@@ -5,25 +5,33 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftEssentialsKit.svg?style=flat)](https://cocoapods.org/pods/SwiftEssentialsKit)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftEssentialsKit.svg?style=flat)](https://cocoapods.org/pods/SwiftEssentialsKit)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
+
+- iOS 10.0+
 
 ## Installation
 
-SwiftEssentialsKit is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Cocoapods
+
+Simply add the following line to your Podfile:
 
 ```ruby
 pod 'SwiftEssentialsKit'
 ```
 
-## Author
+The default submodules are:
 
-Andrea Del Fante, andreadelfante94@gmail.com
+- SwiftEssentialsKit/PackageDTO
+- SwiftEssentialsKit/AlertControllerBuilder
+- SwiftEssentialsKit/Convenient
 
-## License
+### Swift Package Manager
 
-SwiftEssentialsKit is available under the MIT license. See the LICENSE file for more info.
+// TODO:
+
+## Submodules
+
+- [SwiftEssentialsKit/PackageDTO](SwiftEssentialsKit/PackageDTO/README.md)
+- [SwiftEssentialsKit/AlertControllerBuilder](SwiftEssentialsKit/AlertControllerBuilder/README.md)
+- [SwiftEssentialsKit/Convenient](SwiftEssentialsKit/Convenient/README.md)
+- [SwiftEssentialsKit/UI](SwiftEssentialsKit/UI/README.md)

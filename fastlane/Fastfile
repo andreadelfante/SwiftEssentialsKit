@@ -1,0 +1,155 @@
+default_platform(:ios)
+
+setup_travis
+
+platform :ios do
+
+  ########## MISC ##########
+
+  desc "Prepare and open the workspace"
+  lane :prep do
+    pods(silent: false)
+    sh("open ../Example/SwiftEssentialsKit.xcworkspace")
+  end
+
+  desc "Perform a code quality..."
+  lane :code_lint do
+    pods(silent: true)
+
+    swiftlint(
+      mode: :lint,
+      executable: "Example/Pods/SwiftLint/swiftlint",
+      config_file: ".swiftlint.yml",
+      quiet: true
+    )
+  end
+
+  desc "Linting podspec"
+  lane :podspec_lint do
+    pod_lib_lint(
+      verbose: true,
+      quick: true
+    )
+  end
+
+  desc "Linting and fixing..."
+  lane :auto_fixing do
+    swiftlint(
+      mode: :autocorrect,
+      executable: "Example/Pods/SwiftLint/swiftlint",
+      config_file: ".swiftlint.yml"
+    )
+  end
+
+  desc "Install dependencies"
+  lane :pods do |options|
+    silent = options[:silent]
+
+    cocoapods(
+      podfile: "./Example/Podfile",
+      try_repo_update_on_error: true,
+      silent: silent
+    )
+  end
+
+  ########## TESTS ##########
+
+  desc "Run tests for DataFixture (Debug config)"
+  lane :test_debug do
+    pods(silent: true)
+    run_tests
+  end
+
+  desc "Run tests for DataFixture (Release config)"
+  lane :test_release do
+    pods(silent: true)
+    run_tests
+
+    xcov(
+      workspace: "Example/SwiftEssentialsKit.xcworkspace",
+      scheme: "SwiftEssentialsKit-Example",
+      html_report: false,
+      json_report: false,
+      markdown_report: true,
+      derived_data_path: "./build"
+    )
+  end
+
+  ########## DEPLOY ##########
+
+  desc "Deploy a new version"
+  lane :deploy do
+    version = read_podspec['version']
+
+    pull_master
+
+    generate_doc
+    publish_doc(version: version)
+    changelog(version: version)
+    publish_podspec(version: version)
+  end
+
+  desc "Check changelog"
+  lane :changelog do |options|
+    version = options[:version]
+
+    is_write_changelog = UI.confirm "Did you write the changelog for version #{version}?"
+    if !is_write_changelog
+      UI.user_error!("Please write changelog for version #{version} first!")
+    end
+
+    git_add(path: "CHANGELOG.md")
+    git_commit(
+      path: "CHANGELOG.md",
+      message: "Update CHANGELOG.md for version #{version}",
+      allow_nothing_to_commit: true
+    )
+
+    puts "Changelog for version #{version} committed!"
+  end
+
+  desc "Create documentation"
+  lane :generate_doc do
+    jazzy(
+      config: ".jazzy.yaml"
+    )
+  end
+
+  private_lane :pull_master do
+    ensure_git_branch
+    git_pull
+  end
+
+  private_lane :publish_doc do |options|
+    version = options[:version]
+
+    ensure_git_branch
+
+    git_add(path: "docs")
+    git_commit(
+      path: "docs",
+      message: "Update docs folder for version #{version}"
+    )
+
+    puts "Documentation for version #{version} committed!"
+  end
+
+  private_lane :publish_podspec do |options|
+    version = options[:version]
+
+    ensure_git_branch
+
+    branch = git_branch
+    push_to_git_remote(
+      local_branch: branch,
+      remote_branch: branch
+    )
+
+    add_git_tag(tag: version, force: true)
+    push_git_tags(force: true)
+
+    puts "Ready to publish a podspec with version #{version}"
+
+    pod_push
+  end
+end
