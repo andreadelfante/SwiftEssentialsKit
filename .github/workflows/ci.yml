@@ -2,28 +2,28 @@ name: "SwiftEssentialsKit CI"
 on: [push, pull_request]
 
 jobs:
-  lint:podspec:
+  lint_podspec:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/before_run
       - name: Linting podspec
         run: bundle exec fastlane podspec_lint
-  lint:code:
+  lint_code:
     runs-on: macos-latest
     steps:
         - uses: actions/checkout@v2
         - uses: ./.github/actions/before_run
         - name: Linting podspec
           run: bundle exec fastlane code_lint
-  test:debug:
+  test_debug:
     runs-on: macos-latest
     steps:
         - uses: actions/checkout@v2
         - uses: ./.github/actions/before_run
         - name: Linting podspec
           run: bundle exec fastlane test_debug
-#  test:release:
+#  test_release:
 #    runs-on: macos-latest
 #    steps:
 #      - uses: actions/checkout@v2
