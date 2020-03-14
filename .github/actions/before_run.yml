@@ -1,4 +1,0 @@
-name: "Prepare machine"
-description: "Install gem and bundler"
-
-runs: gem update --system && gem install bundler --user-install --no-document --quiet
