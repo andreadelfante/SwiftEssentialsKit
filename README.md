@@ -27,7 +27,11 @@ The default submodules are:
 
 ### Swift Package Manager
 
-// TODO:
+Simply add a package dependency to your Xcode project, select File > Swift Packages > Add Package Dependency and enter
+this repository URL:
+```
+https://github.com/andreadelfante/SwiftEssentialsKit.git
+```
 
 ## Submodules
 
@@ -35,3 +39,8 @@ The default submodules are:
 - [SwiftEssentialsKit/AlertControllerBuilder](SwiftEssentialsKit/AlertControllerBuilder/README.md)
 - [SwiftEssentialsKit/Convenient](SwiftEssentialsKit/Convenient/README.md)
 - [SwiftEssentialsKit/UI](SwiftEssentialsKit/UI/README.md)
+
+## Documentation
+
+Click [here](https://andreadelfante.github.io/SwiftEssentialsKit/index.html) 
+to read the complete SwiftEssentialsKit API documentation.

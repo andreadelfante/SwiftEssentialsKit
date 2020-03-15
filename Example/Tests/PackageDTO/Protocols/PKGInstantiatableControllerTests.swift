@@ -7,7 +7,11 @@
 //
 
 import XCTest
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_PackageDTO
+#else
 import SwiftEssentialsKit
+#endif
 
 class PKGMockViewController: UIViewController, PKGControllerProtocol {
     var package: Package?

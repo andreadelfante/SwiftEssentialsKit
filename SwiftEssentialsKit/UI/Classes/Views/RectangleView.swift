@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 03/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// A rectangle.
@@ -64,3 +66,5 @@ public class RectangleView: UIView {
         backgroundColor = .clear
     }
 }
+
+#endif

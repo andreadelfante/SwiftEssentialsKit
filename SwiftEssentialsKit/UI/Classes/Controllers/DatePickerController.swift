@@ -5,8 +5,14 @@
 //  Created by Andrea Del Fante on 25/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 import JTAppleCalendar
+
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_PackageDTO
+#endif
 
 /// The DatePickerController delegate to defime some actions.
 public protocol DatePickerControllerDelegate: class {
@@ -278,3 +284,5 @@ extension DatePickerController: PKGInstantiatableStoryboard {
         selfController.modalPresentationStyle = .formSheet
     }
 }
+
+#endif

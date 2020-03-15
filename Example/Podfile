@@ -6,7 +6,7 @@ target 'SwiftEssentialsKit_Example' do
   pod 'SwiftEssentialsKit', :path => '../'
   pod 'SwiftEssentialsKit/UI-Dev', :path => '../'
 
-  pod 'Fakery'
+  pod 'Fakery', "~> 4.1.1"
   pod 'SwiftLint'
 
   target 'SwiftEssentialsKit_Tests' do

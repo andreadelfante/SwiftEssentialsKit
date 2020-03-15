@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 18/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// This class enables you to use Package. It handles all the lifecycle of Package, including destroying it when is not useful anymore.
@@ -25,3 +27,5 @@ open class PKGPageViewController: UIPageViewController, PKGControllerProtocol {
         package = nil
     }
 }
+
+#endif

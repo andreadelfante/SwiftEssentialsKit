@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 03/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// An object that manages an horizontal list of selectionable content.
@@ -148,3 +150,5 @@ extension HorizontalSelectionView: UICollectionViewDelegateFlowLayout, UICollect
 //        return delegate?.spacingBetweenItems?(in: self) ?? 8.0
 //    }
 }
+
+#endif

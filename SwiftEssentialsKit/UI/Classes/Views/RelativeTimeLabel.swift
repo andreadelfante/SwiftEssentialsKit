@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 21/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// An UILabel, given a reference time, renders that time as a time period relative to the current time..
@@ -94,3 +96,5 @@ open class RelativeTimeLabel: UILabel {
         return calendar.date(byAdding: .minute, value: 1, to: start) ?? start
     }
 }
+
+#endif

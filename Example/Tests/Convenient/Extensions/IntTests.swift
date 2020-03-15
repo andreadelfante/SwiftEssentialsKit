@@ -7,7 +7,11 @@
 //
 
 import XCTest
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_Convenient
+#else
 import SwiftEssentialsKit
+#endif
 
 class IntTests: XCTestCase {
     

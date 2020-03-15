@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 19/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// A builder to create an alert.
@@ -31,3 +33,5 @@ public class AlertControllerBuilder {
         self.validators = [:]
     }
 }
+
+#endif

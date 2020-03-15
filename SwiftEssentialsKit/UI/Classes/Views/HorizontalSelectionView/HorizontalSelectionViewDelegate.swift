@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 03/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 @objc
@@ -30,3 +32,5 @@ public protocol HorizontalSelectionViewDelegate: class {
     /// - Returns: the spacing value.
     @objc optional func spacingBetweenItems(in horizontalSelectionView: HorizontalSelectionView) -> CGFloat
 }
+
+#endif

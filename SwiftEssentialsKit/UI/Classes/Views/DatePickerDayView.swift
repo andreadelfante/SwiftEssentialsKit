@@ -5,8 +5,14 @@
 //  Created by Andrea Del Fante on 26/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 import JTAppleCalendar
+
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_Convenient
+#endif
 
 class DatePickerDayView: JTACDayCell {
     @IBOutlet private weak var dayLabel: CapsuleLabelView!
@@ -79,3 +85,5 @@ class DatePickerDayView: JTACDayCell {
     }
 
 }
+
+#endif

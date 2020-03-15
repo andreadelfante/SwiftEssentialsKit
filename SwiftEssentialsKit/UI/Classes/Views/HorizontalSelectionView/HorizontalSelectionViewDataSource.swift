@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 03/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// An object that adopts the HorizontalSelectionViewDataSource protocol is responsible for providing the data and views required by a horizontal view.
@@ -23,3 +25,5 @@ public protocol HorizontalSelectionViewDataSource: class {
     ///   - position: the position that specifies the location of the item.
     func horizontalSelectionView(_ horizontalSelectionView: HorizontalSelectionView, cell: HorizontalSelectionViewCell, atPosition position: Int)
 }
+
+#endif

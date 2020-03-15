@@ -8,7 +8,11 @@
 
 import XCTest
 import Fakery
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_UI
+#else
 import SwiftEssentialsKit
+#endif
 
 class DateTimeAgoTests: XCTestCase {
     private let faker = Faker()

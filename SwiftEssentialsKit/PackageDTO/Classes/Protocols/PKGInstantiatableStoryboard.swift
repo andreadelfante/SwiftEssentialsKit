@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 18/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// This protocol defines an instantiatable controller from storyboard.
@@ -46,3 +48,5 @@ extension PKGInstantiatableStoryboard {
 
     }
 }
+
+#endif

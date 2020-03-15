@@ -8,8 +8,7 @@
 #if os(OSX)
     import Cocoa
 #else
-    import Foundation
-    //import UIKit
+    import UIKit
 #endif
 
 /// Info.plist assistant.
@@ -52,6 +51,7 @@ public struct Info {
         return bundle.infoDictionary?["UIStatusBarHidden"] as? Bool
     }
 
+    #if canImport(UIKit)
     /// Get the status bar style in the bundle info dictionary.
     public var statusBarStyle: UIStatusBarStyle? {
         guard let value = bundle.infoDictionary?["UIStatusBarStyle"] as? String else { return nil }
@@ -63,4 +63,5 @@ public struct Info {
         }
         return nil
     }
+    #endif
 }

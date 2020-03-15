@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 03/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// HorizontalSelectionViewCell type.
@@ -18,3 +20,5 @@ public protocol HorizontalSelectionViewCellProvider {
     /// Its associated nib.
     static var nib: UINib { get }
 }
+
+#endif

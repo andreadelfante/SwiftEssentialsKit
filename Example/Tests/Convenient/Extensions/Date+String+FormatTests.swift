@@ -7,8 +7,12 @@
 //
 
 import XCTest
-import SwiftEssentialsKit
 import Fakery
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_Convenient
+#else
+import SwiftEssentialsKit
+#endif
 
 class DateStringFormatTests: XCTestCase {
     private let faker = Faker()

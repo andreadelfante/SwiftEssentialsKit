@@ -7,8 +7,12 @@
 //
 
 import XCTest
-import SwiftEssentialsKit
 import Fakery
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_PackageDTO
+#else
+import SwiftEssentialsKit
+#endif
 
 class PackageTests: XCTestCase {
     private var package: Package!

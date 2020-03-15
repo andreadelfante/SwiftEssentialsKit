@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 26/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// A view user's avatar.
@@ -115,3 +117,5 @@ public class AvatarView: UIView {
         backgroundColor = .clear
     }
 }
+
+#endif

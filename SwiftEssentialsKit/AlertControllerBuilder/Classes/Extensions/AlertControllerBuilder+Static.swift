@@ -5,7 +5,9 @@
 //  Created by Andrea Del Fante on 20/02/2020.
 //
 
-import Foundation
+#if canImport(UIKit)
+
+import UIKit
 
 extension AlertControllerBuilder {
 
@@ -57,3 +59,5 @@ extension AlertControllerBuilder {
         }
     }
 }
+
+#endif

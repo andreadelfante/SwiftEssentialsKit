@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 02/03/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// A capsule with a label inside.
@@ -57,3 +59,5 @@ public class CapsuleLabelView: CapsuleView {
         label.frame = bounds
     }
 }
+
+#endif

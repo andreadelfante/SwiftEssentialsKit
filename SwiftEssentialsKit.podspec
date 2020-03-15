@@ -37,7 +37,9 @@ EssentialsKit is own set of convenience methods, functions and classes to speed 
 
   s.subspec 'UI' do |u|
     u.dependency 'SwiftEssentialsKit/PackageDTO'
+    u.dependency 'SwiftEssentialsKit/Convenient'
     u.dependency 'JTAppleCalendar', '~> 8.0.0'
+    u.dependency 'R.swift', '~> 5.1.0'
 
     u.source_files = [
       'SwiftEssentialsKit/UI/Classes/**/*',
@@ -53,7 +55,6 @@ EssentialsKit is own set of convenience methods, functions and classes to speed 
 
   s.subspec 'UI-Dev' do |ud|
     ud.dependency 'SwiftEssentialsKit/UI'
-    ud.dependency 'R.swift'
 
     ud.script_phases = [
       {

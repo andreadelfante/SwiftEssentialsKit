@@ -5,7 +5,9 @@
 //  Created by Andrea Del Fante on 19/02/2020.
 //
 
-import Foundation
+#if canImport(UIKit)
+
+import UIKit
 
 /// A generic protocol to define common alert building functions.
 public protocol AlertBuilderProtocol {
@@ -105,3 +107,5 @@ extension AlertBuilderProtocol {
         return show(in: context, animated: animated, completion: nil)
     }
 }
+
+#endif

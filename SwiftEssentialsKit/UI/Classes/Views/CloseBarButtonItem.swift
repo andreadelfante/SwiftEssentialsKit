@@ -5,6 +5,8 @@
 //  Created by Andrea Del Fante on 25/02/2020.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 /// A bar button item with X icon.
@@ -29,3 +31,5 @@ public class CloseBarButtonItem: UIBarButtonItem {
         accessibilityLabel = R.string.accessibility.actionClose()
     }
 }
+
+#endif

@@ -7,7 +7,11 @@
 //
 
 import XCTest
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_AlertControllerBuilder
+#else
 import SwiftEssentialsKit
+#endif
 
 class AlertControllerBuilderTests: XCTestCase {
     private let title = "CUSTOM_TITLE"
@@ -111,12 +115,15 @@ class AlertControllerBuilderTests: XCTestCase {
         XCTAssertEqual(result.actions.map { $0.title }, expected.actions.map { $0.title })
         XCTAssertEqual(result.textFields?.map { $0.text }, expected.textFields?.map { $0.text })
         
-        let resultActionCancel = try! XCTUnwrap(result.actions.first { $0.style == .cancel })
-        let resultActionDestructive = try! XCTUnwrap(result.actions.first { $0.style == .destructive })
-        let resultActionDefault = try! XCTUnwrap(result.actions.first { $0.style == .default })
+        let resultActionCancel = result.actions.first { $0.style == .cancel }
+        let resultActionDestructive = result.actions.first { $0.style == .destructive }
+        let resultActionDefault = result.actions.first { $0.style == .default }
         
-        XCTAssertTrue(resultActionCancel.isEnabled)
-        XCTAssertFalse(resultActionDestructive.isEnabled)
-        XCTAssertFalse(resultActionDefault.isEnabled)
+        XCTAssertNotNil(resultActionCancel)
+        XCTAssertNotNil(resultActionDestructive)
+        XCTAssertNotNil(resultActionDefault)
+        XCTAssertTrue(resultActionCancel!.isEnabled)
+        XCTAssertFalse(resultActionDestructive!.isEnabled)
+        XCTAssertFalse(resultActionDefault!.isEnabled)
     }
 }

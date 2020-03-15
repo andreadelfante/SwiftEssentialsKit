@@ -7,7 +7,11 @@
 //
 
 import XCTest
+#if SWIFT_PACKAGE
+import SwiftEssentialsKit_Convenient
+#else
 import SwiftEssentialsKit
+#endif
 
 class InfoTests: XCTestCase {
     private var bundle: Bundle!
@@ -40,7 +44,9 @@ class InfoTests: XCTestCase {
         XCTAssertEqual(info.isInitiallyStatusBarHidden, true)
     }
     
+    #if canImport(UIKit)
     func testStatusBarStyle() {
         XCTAssertNotNil(info.statusBarStyle)
     }
+    #endif
 }
