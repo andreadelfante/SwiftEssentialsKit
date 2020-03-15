@@ -45,6 +45,7 @@ EssentialsKit is own set of convenience methods, functions and classes to speed 
       'SwiftEssentialsKit/UI/Classes/**/*',
       'SwiftEssentialsKit/UI/Generated/**/*'
     ]
+    u.preserve_paths = ['SwiftEssentialsKit/UI/Generated']
 
     u.resource = [
       'SwiftEssentialsKit/UI/Assets/**/*.{storyboard,xib,xcassets,lproj/*}'
@@ -59,16 +60,11 @@ EssentialsKit is own set of convenience methods, functions and classes to speed 
     ud.script_phases = [
       {
         :name => 'R.swift for SwiftEssentialsKit/UI',
-        :script => '"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT/R.generated.swift"',
+        :script => '"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT/../../R.generated.swift"',
         :input_files => ['$TEMP_DIR/rswift-lastrun'],
-        :output_files => ['$SRCROOT/R.generated.swift'],
+        :output_files => ['$SRCROOT/../../R.generated.swift'],
         :execution_position => :before_compile
       },
-      {
-        :name => 'Move R.swift for SwiftEssentialsKit/UI in correct folder',
-        :script => 'mv "$SRCROOT/R.generated.swift" "$SRCROOT/../../SwiftEssentialsKit/UI/Generated/"',
-        :execution_position => :before_compile
-      }
     ]
   end
 end
