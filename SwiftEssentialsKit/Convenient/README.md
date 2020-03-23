@@ -51,6 +51,7 @@ import SwiftEssentialsKit
 "12".asInt // => 12
 "12.0".asFloat // => 12.0
 "123.32".asDouble // => 123.32
+"red, green, blue".split(separator: ", ") // => ["red", "green", "blue"]
 
 "2020-03-12".date(.yyyyMMdd) // => Date("12/03/2020 00:00:00")
 ```
