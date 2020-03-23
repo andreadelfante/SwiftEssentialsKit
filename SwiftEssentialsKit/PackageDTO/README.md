@@ -18,13 +18,15 @@ class ExampleViewController: PKGViewController {
     
     static func package(text: String) -> Package {
         return Package()
-            .put(key: PackageKeys.text, element: text)
+            .put(key: PackageKeys.text, element: text)  // WARNING: PackageKeys.text and PackageKeys.text.rawValue do NOT produce the same hash codes.
+                                                        // PLEASE DO NOT MIX THEM.
     }
     
     override func properties(from package: Package) {
         super.properties(from: package)
         
-        text = package[PackageKeys.text]
+        text = package[PackageKeys.text] // WARNING: PackageKeys.text and PackageKeys.text.rawValue do NOT produce the same hash codes.
+                                         // PLEASE DO NOT MIX THEM.
     }
     
     override func viewDidLoad() {
