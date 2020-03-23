@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
-  SwiftEssentialsKit: 1979a79c508d17d1b0d72b77d457cb9545f94fbb
+  SwiftEssentialsKit: eee713d9faa98a804fdc88b24dc68a0c26b1c064
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
 PODFILE CHECKSUM: 190bc70b8e912d57ec9eade08d49e60daef81553
