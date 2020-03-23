@@ -167,3 +167,28 @@ extension ViewsViewController: HorizontalSelectionViewDelegate, HorizontalSelect
     }
 }
 ```
+
+#### NibLoadableView
+
+```swift
+ìmport SwiftEssentialsKit
+
+class YourView: UIView, NibLoadableView {
+    static var nib: UINib UINib(nibName: "YourView-nibName", bundle: Bundle(for: YourView.swift))
+}
+
+YourView.instantiate() // With NibLoadableView, you can instantiate your view from dot notation.
+```
+
+#### UIViewController convenient functions
+
+```swift
+ìmport SwiftEssentialsKit
+
+class YourController: UIViewController {
+    func yourFunction() {
+        presentAutomatically(NextController.instantiate()) // Automatically presenting NextController, handling if it is a UINavigationController or it has a navigationController.
+        dismissAutomatically() // Automatically dismissing this view controller
+    }
+}
+```
