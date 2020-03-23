@@ -23,6 +23,16 @@ class StringTests: XCTestCase {
         XCTAssertEqual(" good ".trimmed, "good")
     }
     
+    func testSplitComponent() {
+        let dataSet = [
+            ("red, green, blue", ", ", ["red", "green", "blue"])
+        ]
+        
+        dataSet.forEach { (data) in
+            XCTAssertEqual(data.0.split(separator: data.1), data.2)
+        }
+    }
+    
     func testAsInt() {
         XCTAssertNil("".asInt)
         XCTAssertNil("hi".asInt)

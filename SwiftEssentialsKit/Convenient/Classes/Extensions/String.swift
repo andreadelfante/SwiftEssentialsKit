@@ -15,6 +15,12 @@ extension String {
             in: CharacterSet.whitespacesAndNewlines
         )
     }
+    
+    /// Returns an array containing all elements splitting by the separator.
+    /// - Parameter separator: the separator key.
+    public func split(separator: String) -> [String] {
+        return components(separatedBy: separator)
+    }
 }
 
 extension String {
