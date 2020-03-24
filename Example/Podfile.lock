@@ -4,21 +4,21 @@ PODS:
   - R.swift (5.1.0):
     - R.swift.Library (~> 5.1.0)
   - R.swift.Library (5.1.0)
-  - SwiftEssentialsKit (1.0.0):
-    - SwiftEssentialsKit/Basic (= 1.0.0)
-  - SwiftEssentialsKit/AlertControllerBuilder (1.0.0)
-  - SwiftEssentialsKit/Basic (1.0.0):
+  - SwiftEssentialsKit (1.1.0):
+    - SwiftEssentialsKit/Basic (= 1.1.0)
+  - SwiftEssentialsKit/AlertControllerBuilder (1.1.0)
+  - SwiftEssentialsKit/Basic (1.1.0):
     - SwiftEssentialsKit/AlertControllerBuilder
     - SwiftEssentialsKit/Convenient
     - SwiftEssentialsKit/PackageDTO
-  - SwiftEssentialsKit/Convenient (1.0.0)
-  - SwiftEssentialsKit/PackageDTO (1.0.0)
-  - SwiftEssentialsKit/UI (1.0.0):
+  - SwiftEssentialsKit/Convenient (1.1.0)
+  - SwiftEssentialsKit/PackageDTO (1.1.0)
+  - SwiftEssentialsKit/UI (1.1.0):
     - JTAppleCalendar (~> 8.0.0)
     - R.swift (~> 5.1.0)
     - SwiftEssentialsKit/Convenient
     - SwiftEssentialsKit/PackageDTO
-  - SwiftEssentialsKit/UI-Dev (1.0.0):
+  - SwiftEssentialsKit/UI-Dev (1.1.0):
     - SwiftEssentialsKit/UI
   - SwiftLint (0.39.1)
 
@@ -45,7 +45,7 @@ SPEC CHECKSUMS:
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
   R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
   R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
-  SwiftEssentialsKit: eee713d9faa98a804fdc88b24dc68a0c26b1c064
+  SwiftEssentialsKit: 8f1850e27ff89047e6764b2a71d212942358c955
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
 PODFILE CHECKSUM: 190bc70b8e912d57ec9eade08d49e60daef81553

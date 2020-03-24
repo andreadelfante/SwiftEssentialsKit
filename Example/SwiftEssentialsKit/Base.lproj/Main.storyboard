@@ -105,25 +105,122 @@
                                     <constraint firstAttribute="height" constant="80" id="33I-XP-nCx"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7o-wM-Dqx" customClass="CircleView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="16" y="250" width="290" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="avS-SV-2Hs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-xQ-hhh" customClass="CircleLabelView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="314" y="250" width="45" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="01t-hV-GSR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="asd"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-kb-0HB" customClass="DividerView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="16" y="303" width="30" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="QQw-8K-b4g"/>
+                                    <constraint firstAttribute="height" constant="45" id="YGd-Vl-CkL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="positionRaw">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-9I-9J8" customClass="DividerView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="54" y="303" width="30" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6RP-rh-1X0"/>
+                                    <constraint firstAttribute="width" constant="30" id="klw-cS-y9N"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="positionRaw">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6d-kA-LKi" customClass="DividerView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="92" y="303" width="30" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UUW-9y-2DD"/>
+                                    <constraint firstAttribute="width" constant="30" id="u3x-HI-6Kq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="positionRaw">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNw-ig-fIV" customClass="DividerView" customModule="SwiftEssentialsKit">
+                                <rect key="frame" x="130" y="303" width="30" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="LxG-gN-ZQD"/>
+                                    <constraint firstAttribute="width" constant="30" id="d1I-Q4-O1y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="positionRaw">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="G6d-kA-LKi" firstAttribute="top" secondItem="W7o-wM-Dqx" secondAttribute="bottom" constant="8" id="15F-sF-hl0"/>
                             <constraint firstItem="cl8-sB-bH6" firstAttribute="top" secondItem="epd-Lv-Ahn" secondAttribute="bottom" constant="8" id="1SQ-Fr-7ZX"/>
                             <constraint firstItem="YtZ-XQ-Tzi" firstAttribute="leading" secondItem="OLl-ZD-x2I" secondAttribute="leadingMargin" id="2H2-BX-2tf"/>
+                            <constraint firstItem="AQw-kb-0HB" firstAttribute="leading" secondItem="OLl-ZD-x2I" secondAttribute="leadingMargin" id="8CJ-rO-VlZ"/>
                             <constraint firstItem="epd-Lv-Ahn" firstAttribute="centerX" secondItem="OLl-ZD-x2I" secondAttribute="centerX" id="8Kx-Fl-gVy"/>
+                            <constraint firstItem="KNw-ig-fIV" firstAttribute="top" secondItem="W7o-wM-Dqx" secondAttribute="bottom" constant="8" id="9wz-gn-7xi"/>
                             <constraint firstItem="Jrj-YX-k0L" firstAttribute="leading" secondItem="cl8-sB-bH6" secondAttribute="trailing" constant="8" id="BoA-D7-PYE"/>
                             <constraint firstItem="Lqk-gG-ady" firstAttribute="trailing" secondItem="OLl-ZD-x2I" secondAttribute="trailingMargin" id="IiL-Bb-hTo"/>
+                            <constraint firstItem="BzZ-0L-8Mk" firstAttribute="top" secondItem="wA2-xQ-hhh" secondAttribute="bottom" constant="289" id="M7Z-cC-iuW"/>
                             <constraint firstItem="YtZ-XQ-Tzi" firstAttribute="top" secondItem="HAE-0h-0Tw" secondAttribute="bottom" constant="8" id="Rdn-Ql-VwJ"/>
                             <constraint firstItem="Lqk-gG-ady" firstAttribute="leading" secondItem="OLl-ZD-x2I" secondAttribute="leadingMargin" id="UNc-t4-Esa"/>
                             <constraint firstAttribute="trailing" secondItem="HAE-0h-0Tw" secondAttribute="trailing" constant="245" id="Wro-oy-2Qa"/>
+                            <constraint firstItem="AQw-kb-0HB" firstAttribute="top" secondItem="W7o-wM-Dqx" secondAttribute="bottom" constant="8" id="X2T-Od-XU8"/>
                             <constraint firstItem="Lqk-gG-ady" firstAttribute="top" secondItem="Jrj-YX-k0L" secondAttribute="bottom" constant="16" id="b9r-WA-b6D"/>
+                            <constraint firstItem="KNw-ig-fIV" firstAttribute="leading" secondItem="G6d-kA-LKi" secondAttribute="trailing" constant="8" id="c0Z-if-2p3"/>
+                            <constraint firstItem="wA2-xQ-hhh" firstAttribute="leading" secondItem="W7o-wM-Dqx" secondAttribute="trailing" constant="8" id="cAQ-2B-HPL"/>
                             <constraint firstItem="Jrj-YX-k0L" firstAttribute="leading" secondItem="gb8-NC-PSs" secondAttribute="trailing" constant="8" id="cBq-ib-57H"/>
                             <constraint firstItem="Jrj-YX-k0L" firstAttribute="trailing" secondItem="OLl-ZD-x2I" secondAttribute="trailingMargin" id="cMe-UU-4dW"/>
                             <constraint firstItem="HAE-0h-0Tw" firstAttribute="bottom" secondItem="cl8-sB-bH6" secondAttribute="bottom" id="eJs-co-wNO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wA2-xQ-hhh" secondAttribute="trailing" id="fiT-jZ-Q1t"/>
+                            <constraint firstItem="wA2-xQ-hhh" firstAttribute="top" secondItem="Lqk-gG-ady" secondAttribute="bottom" constant="8" symbolic="YES" id="fkT-gW-hOi"/>
+                            <constraint firstItem="W7o-wM-Dqx" firstAttribute="leading" secondItem="OLl-ZD-x2I" secondAttribute="leadingMargin" id="fy7-8F-dUR"/>
+                            <constraint firstItem="G6d-kA-LKi" firstAttribute="leading" secondItem="bNi-9I-9J8" secondAttribute="trailing" constant="8" id="hnn-Kt-vQ8"/>
                             <constraint firstItem="HAE-0h-0Tw" firstAttribute="leading" secondItem="YtZ-XQ-Tzi" secondAttribute="leading" id="iBn-5Z-ceg"/>
+                            <constraint firstItem="W7o-wM-Dqx" firstAttribute="top" secondItem="Lqk-gG-ady" secondAttribute="bottom" constant="8" symbolic="YES" id="lZq-VV-zZG"/>
                             <constraint firstItem="epd-Lv-Ahn" firstAttribute="top" secondItem="Phd-8B-0fV" secondAttribute="bottom" constant="8" id="lh4-ee-qOc"/>
+                            <constraint firstItem="bNi-9I-9J8" firstAttribute="leading" secondItem="AQw-kb-0HB" secondAttribute="trailing" constant="8" id="o7f-ua-Opm"/>
                             <constraint firstItem="HAE-0h-0Tw" firstAttribute="top" secondItem="cl8-sB-bH6" secondAttribute="top" id="qqs-w0-qds"/>
                             <constraint firstItem="gb8-NC-PSs" firstAttribute="top" secondItem="cl8-sB-bH6" secondAttribute="bottom" constant="8" id="rIx-W1-h0U"/>
+                            <constraint firstItem="bNi-9I-9J8" firstAttribute="top" secondItem="W7o-wM-Dqx" secondAttribute="bottom" constant="8" id="uL8-ox-efL"/>
                             <constraint firstItem="Jrj-YX-k0L" firstAttribute="top" secondItem="epd-Lv-Ahn" secondAttribute="bottom" constant="8" id="wN7-c3-8Bz"/>
                         </constraints>
                     </view>
