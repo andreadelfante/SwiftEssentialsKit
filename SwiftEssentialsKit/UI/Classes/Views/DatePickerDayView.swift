@@ -15,7 +15,7 @@ import SwiftEssentialsKit_Convenient
 #endif
 
 class DatePickerDayView: JTACDayCell {
-    @IBOutlet private weak var dayLabel: CapsuleLabelView!
+    @IBOutlet private weak var dayLabel: CircleLabelView!
 
     var date: Date? {
         didSet {
@@ -31,16 +31,16 @@ class DatePickerDayView: JTACDayCell {
     override var isHidden: Bool {
         get { return super.isHidden }
         set {
-            dayLabel.isHidden = newValue
+            dayLabel?.isHidden = newValue
             super.isHidden = newValue
         }
     }
 
     func select() {
-        let color = UIWindow.appearance().tintColor
+        let color = UIWindow.appearance().tintColor ?? .black
 
         dayLabel.color = color
-        dayLabel.textColor = color != nil && isDark(color: color!) ? .white : .black
+        dayLabel.textColor = isDark(color: color) ? .white : .black
     }
 
     func deselect() {
