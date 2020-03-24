@@ -22,13 +22,12 @@ class ViewController: PKGTableViewController {
 
     @IBAction
     private func onTapPassToStoryboardController() {
-        navigationController?.pushViewController(SecondViewController.instantiate(text: "SUCCESS"),
-                                                 animated: true)
+        presentAutomatically(SecondViewController.instantiate(text: "SUCCESS"))
     }
     
     @IBAction
     private func onTapPassToCodeController() {
-        present(ThirdViewController.instantiate(bool: true), animated: true)
+        presentAutomatically(ThirdViewController.instantiate(bool: true))
     }
     
     @IBAction
@@ -75,9 +74,33 @@ class ViewController: PKGTableViewController {
     
     @IBAction
     private func onTapViews() {
-        navigationController?.pushViewController(ViewsViewController.instantiate(), animated: true)
+        presentAutomatically(ViewsViewController.instantiate())
+    }
+    
+    @IBAction
+    private func onTapDatePicker() {
+        let calendar = Calendar.current
+        let current = Date()
+        let start = calendar.date(byAdding: .year, value: -1, to: current)!
+        let end = calendar.date(byAdding: .year, value: 1, to: current)!
+        
+        presentAutomatically(DatePickerController.instantiate(current: Date(), start: start, end: end, delegate: self))
     }
 }
+
+// MARK: - DatePickerControllerDelegate
+
+extension ViewController: DatePickerControllerDelegate {
+    func datePickerController(_ controller: DatePickerController, isSelectable date: Date) -> Bool {
+        return true
+    }
+    
+    func datePickerController(_ controller: DatePickerController, onSelect date: Date) {
+        print("Selected date: \(date)")
+    }
+}
+
+// MARK: - PKGInstantiatableStoryboard
 
 extension ViewController: PKGInstantiatableStoryboard {
     static var storyboardSource: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)

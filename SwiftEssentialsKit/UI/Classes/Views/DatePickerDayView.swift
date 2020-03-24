@@ -31,7 +31,7 @@ class DatePickerDayView: JTACDayCell {
     override var isHidden: Bool {
         get { return super.isHidden }
         set {
-            dayLabel.isHidden = newValue
+            dayLabel?.isHidden = newValue
             super.isHidden = newValue
         }
     }

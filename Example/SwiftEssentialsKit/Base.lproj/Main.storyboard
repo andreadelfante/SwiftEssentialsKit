@@ -285,12 +285,35 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f0o-Tx-sBv">
+                                        <rect key="frame" x="0.0" y="351" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f0o-Tx-sBv" id="Fgb-Ur-yfA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yd-Fa-709">
+                                                    <rect key="frame" x="20" y="20" width="335" height="4"/>
+                                                    <state key="normal" title="Date picker"/>
+                                                    <connections>
+                                                        <action selector="onTapDatePicker" destination="VAc-9H-3wc" eventType="touchUpInside" id="ks7-jp-Wbi"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7yd-Fa-709" firstAttribute="leading" secondItem="Fgb-Ur-yfA" secondAttribute="leading" constant="20" symbolic="YES" id="2UL-vC-LCa"/>
+                                                <constraint firstAttribute="trailing" secondItem="7yd-Fa-709" secondAttribute="trailing" constant="20" symbolic="YES" id="RUc-Pc-S95"/>
+                                                <constraint firstAttribute="bottom" secondItem="7yd-Fa-709" secondAttribute="bottom" constant="20" symbolic="YES" id="ZSB-tE-Dwc"/>
+                                                <constraint firstItem="7yd-Fa-709" firstAttribute="top" secondItem="Fgb-Ur-yfA" secondAttribute="top" constant="20" symbolic="YES" id="t3m-UN-A9e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="vkJ-5i-duR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eiC-zc-n2s">
-                                        <rect key="frame" x="0.0" y="387" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="430.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eiC-zc-n2s" id="eDL-Xh-tVE">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
