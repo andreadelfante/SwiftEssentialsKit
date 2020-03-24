@@ -13,6 +13,20 @@ import SwiftEssentialsKit
 
 let controller = DatePickerController.instantiate(current: Date(), start: Date(), end: Date())
 present(controller, animated: true)
+
+// Note: to customize selection color, assign a value of `UIWindow.appearance().tintColor`
+```
+
+#### NibLoadableView
+
+```swift
+ìmport SwiftEssentialsKit
+
+class YourView: UIView, NibLoadableView {
+    static var nib: UINib UINib(nibName: "YourView-nibName", bundle: Bundle(for: YourView.swift))
+}
+
+YourView.instantiate() // With NibLoadableView, you can instantiate your view from dot notation.
 ```
 
 ### Misc
@@ -23,6 +37,19 @@ import SwiftEssentialsKit
 
 let date = Date() // => Example: "12/03/2020 23:40:23"
 date.timeAgo() // => "Just now"
+```
+
+#### UIViewController convenient functions
+
+```swift
+ìmport SwiftEssentialsKit
+
+class YourController: UIViewController {
+    func yourFunction() {
+        presentAutomatically(NextController.instantiate()) // Automatically presenting NextController, handling if it is a UINavigationController or it has a navigationController.
+        dismissAutomatically() // Automatically dismissing this view controller
+    }
+}
 ```
 
 ### Views
@@ -67,6 +94,32 @@ let capsuleView = CapsuleView()
 capsuleView.color = .orange
 ```
 
+#### CircleLabelView
+
+![CircleLabelView](./images/circle_label_view.png)
+```swift
+import SwiftEssentialsKit
+
+// You can use it in a storyboard as well.
+// Add a UIView and define its class as CircleLabelView.
+let circleLabelView = CircleLabelView()
+circleLabelView.text = "text"
+circleLabelView.textColor = .black
+circleLabelView.color = .red
+```
+
+#### CircleLabel
+
+![CircleLabel](./images/circle_view.png)
+```swift
+import SwiftEssentialsKit
+
+// You can use it in a storyboard as well.
+// Add a UIView and define its class as CircleLabel.
+let circleLabel = CircleLabel()
+circleLabel.color = .orange
+```
+
 #### CloseBarButtonItem
 
 ```swift
@@ -99,6 +152,17 @@ import SwiftEssentialsKit
 // Add a UILabel and define its class as RelativeTimeLabel.
 let relativeTimeLabel = RelativeTimeLabel()
 relativeTimeLabel.referenceDate = Date()
+```
+
+#### DividerView
+
+```swift
+import SwiftEssentialsKit
+
+// You can use it in a storyboard as well.
+// Add a UIView and define its class as DividerView.
+let dividerView = DividerView()
+dividerView.position = .bottom
 ```
 
 #### HorizontalSelectionView
@@ -164,31 +228,6 @@ extension ViewsViewController: HorizontalSelectionViewDelegate, HorizontalSelect
             cell.capsuleLabelView.color = .red
             cell.capsuleLabelView.textColor = .black
         }
-    }
-}
-```
-
-#### NibLoadableView
-
-```swift
-ìmport SwiftEssentialsKit
-
-class YourView: UIView, NibLoadableView {
-    static var nib: UINib UINib(nibName: "YourView-nibName", bundle: Bundle(for: YourView.swift))
-}
-
-YourView.instantiate() // With NibLoadableView, you can instantiate your view from dot notation.
-```
-
-#### UIViewController convenient functions
-
-```swift
-ìmport SwiftEssentialsKit
-
-class YourController: UIViewController {
-    func yourFunction() {
-        presentAutomatically(NextController.instantiate()) // Automatically presenting NextController, handling if it is a UINavigationController or it has a navigationController.
-        dismissAutomatically() // Automatically dismissing this view controller
     }
 }
 ```

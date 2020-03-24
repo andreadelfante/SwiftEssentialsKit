@@ -15,7 +15,7 @@ import SwiftEssentialsKit_Convenient
 #endif
 
 class DatePickerDayView: JTACDayCell {
-    @IBOutlet private weak var dayLabel: CapsuleLabelView!
+    @IBOutlet private weak var dayLabel: CircleLabelView!
 
     var date: Date? {
         didSet {
@@ -37,10 +37,10 @@ class DatePickerDayView: JTACDayCell {
     }
 
     func select() {
-        let color = UIWindow.appearance().tintColor
+        let color = UIWindow.appearance().tintColor ?? .black
 
         dayLabel.color = color
-        dayLabel.textColor = color != nil && isDark(color: color!) ? .white : .black
+        dayLabel.textColor = isDark(color: color) ? .white : .black
     }
 
     func deselect() {
