@@ -21,8 +21,10 @@ public class RectangleView: UIView {
             return UIColor(cgColor: cgColor)
         }
         set {
+            CATransaction.begin()
+            CATransaction.setDisableActions(withAnimation)
             shapeLayer.fillColor = newValue?.cgColor
-            shapeLayer.setNeedsDisplay()
+            CATransaction.commit()
         }
     }
 
@@ -31,9 +33,12 @@ public class RectangleView: UIView {
     public var cornerRadius: CGFloat = 0 {
         didSet {
             shapeLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
-            shapeLayer.setNeedsDisplay()
         }
     }
+    
+    /// Set if this view should use animation to change its look.
+    @IBInspectable
+    public var withAnimation: Bool = true
 
     private var shapeLayer: CAShapeLayer!
 

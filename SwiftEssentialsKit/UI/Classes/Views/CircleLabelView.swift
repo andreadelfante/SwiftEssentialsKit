@@ -39,7 +39,7 @@ public class CircleLabelView: CircleView {
         }
     }
 
-    private var label: UILabel!
+    internal var label: UILabel!
 
     override func commonInit() {
         super.commonInit()
