@@ -128,29 +128,8 @@
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
-      "line": 73,
-      "symbol": "AvatarView.init(frame:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
-      "line": 78,
-      "symbol": "AvatarView.init(coder:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
-      "line": 104,
+      "line": 56,
       "symbol": "AvatarView.layoutSubviews()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/AvatarView.swift",
-      "line": 114,
-      "symbol": "AvatarView.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -163,28 +142,28 @@
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
-      "line": 31,
+      "line": 37,
       "symbol": "CapsuleView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
-      "line": 36,
+      "line": 42,
       "symbol": "CapsuleView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
-      "line": 48,
+      "line": 54,
       "symbol": "CapsuleView.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CapsuleView.swift",
-      "line": 55,
+      "line": 61,
       "symbol": "CapsuleView.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -198,28 +177,28 @@
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CircleView.swift",
-      "line": 31,
+      "line": 37,
       "symbol": "CircleView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CircleView.swift",
-      "line": 36,
+      "line": 42,
       "symbol": "CircleView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CircleView.swift",
-      "line": 48,
+      "line": 54,
       "symbol": "CircleView.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/CircleView.swift",
-      "line": 59,
+      "line": 65,
       "symbol": "CircleView.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -386,29 +365,36 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
-      "line": 40,
-      "symbol": "RectangleView.init(frame:)",
+      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleLabelView.swift",
+      "line": 56,
+      "symbol": "RectangleLabelView.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
       "line": 45,
+      "symbol": "RectangleView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
+      "line": 50,
       "symbol": "RectangleView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
-      "line": 57,
+      "line": 62,
       "symbol": "RectangleView.layoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrea/Projects/ios/lib/SwiftEssentialsKit/SwiftEssentialsKit/UI/Classes/Views/RectangleView.swift",
-      "line": 63,
+      "line": 68,
       "symbol": "RectangleView.willMove(toWindow:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
