@@ -143,6 +143,21 @@ rectangleView.color = .blue
 rectangleView.cornerRadius = 8
 ```
 
+#### RectangleLabelView
+
+![RectangleLabelView](./images/rectangle_label_view.png)
+
+```swift
+import SwiftEssentialsKit
+
+// You can use it in a storyboard as well.
+// Add a UIView and define its class as RectangleLabelView.
+let rectangleView = RectangleLabelView()
+rectangleView.color = .blue
+rectangleView.text = "text"
+rectangleView.cornerRadius = 8
+```
+
 #### RelativeTimeLabel
 
 ```swift
