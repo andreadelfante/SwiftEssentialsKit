@@ -21,12 +21,18 @@ public class CircleView: UIView {
             return UIColor(cgColor: cgColor)
         }
         set {
+            CATransaction.begin()
+            CATransaction.setDisableActions(withAnimation)
             shapeLayer.fillColor = newValue?.cgColor
-            shapeLayer.setNeedsDisplay()
+            CATransaction.commit()
         }
     }
     
-    private var shapeLayer: CAShapeLayer!
+    /// Set if this view should use animation to change its look.
+    @IBInspectable
+    public var withAnimation: Bool = true
+    
+    internal var shapeLayer: CAShapeLayer!
 
     public override init(frame: CGRect) {
         super.init(frame: frame)

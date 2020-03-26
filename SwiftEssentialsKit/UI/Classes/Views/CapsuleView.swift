@@ -21,10 +21,16 @@ public class CapsuleView: UIView {
             return UIColor(cgColor: cgColor)
         }
         set {
+            CATransaction.begin()
+            CATransaction.setDisableActions(withAnimation)
             shapeLayer.fillColor = newValue?.cgColor
-            shapeLayer.setNeedsDisplay()
+            CATransaction.commit()
         }
     }
+    
+    /// Set if this view should use animation to change its look.
+    @IBInspectable
+    public var withAnimation: Bool = true
 
     private var shapeLayer: CAShapeLayer!
 
