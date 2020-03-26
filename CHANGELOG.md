@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1
+
+- Fix wrong logic for `withAnimation` in UI submodule
+
 ## 1.3.0
 
 - Add RectangleLabelView in UI submodule
