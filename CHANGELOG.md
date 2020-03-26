@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0
+
+- Add RectangleLabelView in UI submodule
+- Add `withAnimation` flag
+
 ## 1.2.0
 
 - Add CircleView, CircleLabelView and DividerView in UI submodule 
