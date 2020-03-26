@@ -22,7 +22,7 @@ public class RectangleView: UIView {
         }
         set {
             CATransaction.begin()
-            CATransaction.setDisableActions(withAnimation)
+            CATransaction.setDisableActions(!withAnimation)
             shapeLayer.fillColor = newValue?.cgColor
             CATransaction.commit()
         }

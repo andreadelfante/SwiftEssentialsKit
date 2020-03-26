@@ -22,7 +22,7 @@ public class CapsuleView: UIView {
         }
         set {
             CATransaction.begin()
-            CATransaction.setDisableActions(withAnimation)
+            CATransaction.setDisableActions(!withAnimation)
             shapeLayer.fillColor = newValue?.cgColor
             CATransaction.commit()
         }
