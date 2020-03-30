@@ -35,27 +35,27 @@ extension AlertControllerBuilder {
         return controller
     }
 
-    /// Create automatically a sheet if this device is an ipad, otherwise an alert.
+    /// Create automatically an alert if this device is an ipad, otherwise a sheet.
     /// - Parameter barButtonItem: the anchor.
     /// - Returns: an alert builder.
     public static func automaticStyle(_ barButtonItem: UIBarButtonItem) -> AlertBuilderProtocol {
         switch UIDevice.current.userInterfaceIdiom {
         case .pad:
-            return sheet(barButtonItem)
-        default:
             return alert
+        default:
+            return sheet(barButtonItem)
         }
     }
 
-    /// Create automatically a sheet if this device is an ipad, otherwise an alert.
+    /// Create automatically an alert if this device is an ipad, otherwise a sheet.
     /// - Parameter sourceRect: the anchor.
     /// - Returns: an alert builder.
-    public static func automaticStyle(_ sourceRect: CGRect) -> AlertBuilderProtocol {
+    public static func automaticStyle(_ sourceRect: CGRect = .zero) -> AlertBuilderProtocol {
         switch UIDevice.current.userInterfaceIdiom {
         case .pad:
-            return sheet(sourceRect)
-        default:
             return alert
+        default:
+            return sheet(sourceRect)
         }
     }
 }
