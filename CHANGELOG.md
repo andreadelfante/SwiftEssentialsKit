@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2
+
+- Fix wrong `automaticStyle` in AlertControllerBuilder submodule
+
 ## 1.3.1
 
 - Fix wrong logic for `withAnimation` in UI submodule
