@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+- Add binary search in Array extension
+
 ## 1.3.2
 
 - Fix wrong `automaticStyle` in AlertControllerBuilder submodule
