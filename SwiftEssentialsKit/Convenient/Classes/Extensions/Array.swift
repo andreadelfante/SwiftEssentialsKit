@@ -19,3 +19,31 @@ extension Array where Element == String {
         return joined(separator: " ")
     }
 }
+
+extension Array where Element: Comparable {
+    
+    /// Perform a binary search to find the index of the element.
+    /// Binary search is useful to find an element in a **sorted** array.
+    /// Complexity: **O(log n)**
+    ///
+    /// - Parameter element: the element to find.
+    /// - Returns: the index of the found element.
+    public func binarySearch(for element: Element) -> Index? {
+        var startIndex = 0
+        var endIndex = count - 1
+        
+        while startIndex <= endIndex {
+            let middleIndex = (startIndex + endIndex) / 2
+            
+            if self[middleIndex] > element {
+                endIndex = middleIndex - 1
+            } else if self[middleIndex] < element {
+                startIndex = middleIndex + 1
+            } else {
+                return middleIndex
+            }
+        }
+        
+        return nil
+    }
+}
