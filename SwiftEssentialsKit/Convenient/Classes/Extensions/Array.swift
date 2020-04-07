@@ -35,12 +35,12 @@ extension Array where Element: Comparable {
         while startIndex <= endIndex {
             let middleIndex = (startIndex + endIndex) / 2
             
-            if self[middleIndex] > element {
-                endIndex = middleIndex - 1
+            if self[middleIndex] == element {
+                return middleIndex
             } else if self[middleIndex] < element {
                 startIndex = middleIndex + 1
             } else {
-                return middleIndex
+                endIndex = middleIndex - 1
             }
         }
         
