@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1
+
+- Optimize binary search in Convenient submodule
+
 ## 1.4.0
 
 - Add binary search in Array extension
