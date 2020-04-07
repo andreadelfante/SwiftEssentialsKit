@@ -29,18 +29,40 @@ extension Array where Element: Comparable {
     /// - Parameter element: the element to find.
     /// - Returns: the index of the found element.
     public func binarySearch(for element: Element) -> Index? {
+        return binarySearch {
+            if element == $0 {
+                return .orderedSame
+            } else if element < $0 {
+                return .orderedAscending
+            } else {
+                return .orderedDescending
+            }
+        }
+    }
+}
+
+extension Array {
+    
+    /// Perform a binary search to find the index of the element.
+    /// Binary search is useful to find an element in a **sorted** array.
+    /// Complexity: **O(log n)**
+    ///
+    /// - Parameter where: the comparison criteria.
+    /// - Returns: the index of the found element.
+    public func binarySearch(where: (Element) -> ComparisonResult) -> Index? {
         var startIndex = 0
         var endIndex = count - 1
         
         while startIndex <= endIndex {
             let middleIndex = (startIndex + endIndex) / 2
+            let comparisonResult = `where`(self[middleIndex])
             
-            if self[middleIndex] == element {
+            if comparisonResult == .orderedSame {
                 return middleIndex
-            } else if self[middleIndex] < element {
-                startIndex = middleIndex + 1
-            } else {
+            } else if comparisonResult == .orderedAscending {
                 endIndex = middleIndex - 1
+            } else {
+                startIndex = middleIndex + 1
             }
         }
         

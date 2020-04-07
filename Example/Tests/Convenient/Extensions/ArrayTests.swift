@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Fakery
 #if SWIFT_PACKAGE
 import SwiftEssentialsKit_Convenient
 #else
@@ -14,6 +15,7 @@ import SwiftEssentialsKit
 #endif
 
 class ArrayTests: XCTestCase {
+    private let faker = Faker()
     
     func testJoinedWithNewLine() {
         let array = ["hi", "all", "moarning"]
@@ -29,20 +31,27 @@ class ArrayTests: XCTestCase {
         XCTAssertEqual(array.joinedWithSpace(), expected)
     }
     
-    func testBinarySearch() {
-        XCTAssertNil([Int]().binarySearch(for: 1))
+    func testBinarySearchElement() {
+        let manyElements = Array(0...50)
+        XCTAssertNil(manyElements.binarySearch(for: -1))
+        XCTAssertNil(manyElements.binarySearch(for: 51))
         
-        let oneElement = [1]
-        XCTAssertEqual(oneElement.binarySearch(for: 1), oneElement.startIndex)
-        XCTAssertNil(oneElement.binarySearch(for: 0))
+        manyElements.forEach { (element) in
+            XCTAssertEqual(manyElements.binarySearch(for: element), manyElements.firstIndex(of: element))
+        }
+    }
+    
+    func testBinarySearchWhere() {
+        let manyElements = Array(0...5)
+            .map { _ in faker.lorem.word() }
+            .sorted()
         
-        let manyElements = [1, 2, 3, 4, 5, 6, 7]
-        XCTAssertEqual(manyElements.binarySearch(for: 1), 0)
-        XCTAssertEqual(manyElements.binarySearch(for: 7), manyElements.count - 1)
-        XCTAssertEqual(manyElements.binarySearch(for: 4), manyElements.count / 2)
-        XCTAssertEqual(manyElements.binarySearch(for: 2), 1)
-        XCTAssertEqual(manyElements.binarySearch(for: 6), manyElements.count - 2)
-        XCTAssertNil(manyElements.binarySearch(for: 0))
-        XCTAssertNil(manyElements.binarySearch(for: 8))
+        XCTAssertNil(manyElements.binarySearch(where: { _ in .orderedAscending }))
+        XCTAssertNil(manyElements.binarySearch(where: { _ in .orderedDescending }))
+        
+        manyElements.forEach { (element) in
+            XCTAssertEqual(manyElements.binarySearch(where: { element.compare($0) }),
+                           manyElements.firstIndex(where: { element == $0 }))
+        }
     }
 }
