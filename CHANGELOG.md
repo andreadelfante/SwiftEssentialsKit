@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2
+
+- Add binary search for no-comparable objects in Convenient submodule
+
 ## 1.4.1
 
 - Optimize binary search in Convenient submodule
