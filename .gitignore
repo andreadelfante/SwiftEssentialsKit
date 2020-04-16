@@ -40,3 +40,4 @@ Carthage/Build
 Pods/
 fastlane/test_output
 .build
+vendor
