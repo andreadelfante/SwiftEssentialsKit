@@ -114,6 +114,12 @@ public class DatePickerController: PKGViewController, JTACMonthViewDelegate, JTA
 
         self.initCalendarView()
     }
+    
+    public override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        calendarView.viewWillTransition(to: size, with: coordinator, anchorDate: currentDate)
+    }
 
     // MARK: - JTAppleCalendar
 
