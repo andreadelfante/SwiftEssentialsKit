@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.3
+
+- Support for change orientation in DatePickerController in UI submodule
+
 ## 1.4.2
 
 - Add binary search for no-comparable objects in Convenient submodule
