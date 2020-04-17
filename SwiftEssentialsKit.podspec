@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftEssentialsKit'
-  s.version          = '1.4.2'
+  s.version          = '1.4.3'
   s.summary          = 'My own set of convenience methods,functions and classes. Written in Swift.'
   s.description      = <<-DESC
 EssentialsKit is own set of convenience methods, functions and classes to speed up development. Written in Swift.
