@@ -76,6 +76,22 @@ extension Date {
     public func previousMonth(calendar: Calendar = Calendar.current) -> Date {
         return calendar.date(byAdding: .month, value: -1, to: self)!
     }
+    
+    /// Create a new date with next week values
+    ///
+    /// - Parameter calendar: a calendar
+    /// - Returns: a next week date
+    public func nextWeek(calendar: Calendar = Calendar.current) -> Date {
+        return calendar.date(byAdding: .weekOfYear, value: 1, to: self)!
+    }
+    
+    /// Create a new date with previous week values
+    ///
+    /// - Parameter calendar: a calendar
+    /// - Returns: a previous week date
+    public func previousWeek(calendar: Calendar = Calendar.current) -> Date {
+        return calendar.date(byAdding: .weekOfYear, value: -1, to: self)!
+    }
 
     /// Number of days between this and another date, no matter what the order.
     /// - Parameters:

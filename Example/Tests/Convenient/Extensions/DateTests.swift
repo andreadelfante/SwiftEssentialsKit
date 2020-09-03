@@ -100,6 +100,20 @@ class DateTests: XCTestCase {
         XCTAssertEqual(result, expected)
     }
     
+    func testNextWeek() {
+        let expected = calendar.date(byAdding: .weekOfYear, value: 1, to: date)!
+        let result = date.nextWeek(calendar: calendar)
+        
+        XCTAssertEqual(result, expected)
+    }
+    
+    func testPreviousWeek() {
+        let expected = calendar.date(byAdding: .weekOfYear, value: -1, to: date)!
+        let result = date.previousWeek(calendar: calendar)
+        
+        XCTAssertEqual(result, expected)
+    }
+    
     func testNumberOfDays() {
         let nextDate = calendar.date(byAdding: .day, value: 60, to: date)!
         
