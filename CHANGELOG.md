@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0
+
+- Add `nextWeek()` and `previousWeek()` in Date in Convenient submodule
+
 ## 1.4.3
 
 - Support for change orientation in DatePickerController in UI submodule
